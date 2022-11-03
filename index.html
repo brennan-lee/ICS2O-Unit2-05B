@@ -64,16 +64,57 @@
           height="25%"
         />
         <p></p>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+        <th>
+          <h2>please enter your employment infomation:</h2>
+        </th>
+      </tr>
+    </table>
+    <!-- Simple Textfield -->
+    <form action="#">
+      <p>number of hours worked</p>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          pattern="-?[0-9]*(\.[0-9]+)?"
+          id="number-of-hours-worked"
+        />
+        <label class="mdl-textfield__label" for="number-of-hours-worked"
+          >number of hours worked here ...</label
         >
-          Say "Hello, World!"
-        </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="hello-world"></div>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
+    <!-- Numeric Textfield -->
+    <form action="#">
+      <p>Hourly rate $</p>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          pattern="-?[0-9]*(\.[0-9]+)?"
+          id="Hourly-rate"
+        />
+        <label class="mdl-textfield__label" for="Hourly-rate"
+          >Hourly rate $ here ...</label
+        >
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
+    <br />
+    <!-- Raised button with ripple -->
+    <button
+      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+      onclick="calculate()"
+    >
+      Calculate
+    </button>
+    <br />
+    <div id="answers">
+      <div id="take"></div>
+      <div id="wage"></div>
+      <div id="takeHomeSalary"></div>
+    </div>
       </main>
     </div>
   </body>
