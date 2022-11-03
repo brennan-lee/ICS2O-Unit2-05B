@@ -9,10 +9,10 @@
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
+if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit2-05B/sw.js", {
     scope: "/ICS2O-Unit2-05B/",
-  });
+  })
 }
 
 /**
